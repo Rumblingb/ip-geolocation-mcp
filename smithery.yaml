@@ -1,0 +1,14 @@
+# Smithery configuration for ip-geolocation-mcp
+# https://smithery.ai/docs/deploy
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+    description: No configuration required. Uses ipinfo.io free tier (no API key needed).
+  commandFunction:
+    type: sh
+    command: python
+    args:
+      - server.py
