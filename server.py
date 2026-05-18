@@ -14,7 +14,7 @@ Pricing: $19/month — https://buy.stripe.com/dRm6oJ4Hd2Jugek0wz1oI0m
 from __future__ import annotations
 
 import httpx
-from mcp.server import Server, NotificationOptions
+from mcp.server.lowlevel import Server, NotificationOptions
 from mcp.server.models import InitializationOptions
 from mcp.types import Tool, TextContent, ServerResult
 import mcp.server.stdio
